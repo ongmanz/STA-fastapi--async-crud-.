@@ -11,7 +11,8 @@ RUN git clone https://github.com/ongmanz/STA-fastapi-async-crud.git /app
 WORKDIR /app
 
 # Install dependencies from requirements.txt
-RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir fastapi uvicorn SQLAlchemy pydantic
 
 # Open port 8000 for FastAPI
 EXPOSE 8000

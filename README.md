@@ -3,7 +3,7 @@ FastAPI technical test for SRI TRANG
 
 ### Installation
 
-_To get this APIs you need to following these steps._
+_To use this APIs please following these steps._
 
 1. Clone the repo
    ```sh
@@ -11,7 +11,17 @@ _To get this APIs you need to following these steps._
    ```
 2. Install dependency packages
    ```sh
-   pip install fastapi sqlalchemy uvicorn
+   pip install fastapi sqlalchemy uvicorn pydantic
+   ```
+
+If docker below
+1. Create docker image
+   ```sh
+   docker build -t sta-fastapi-app .
+   ```
+2. Run docker container
+   ```sh
+   docker run -d -p 8000:8000 sta-fastapi-app
    ```
 
 ## How it work
